@@ -82,7 +82,7 @@ load_browsers() ->
 
 -spec read_priv_file(Filename :: string()) -> {'ok', binary()} | {'error', atom()}.
 read_priv_file(Filename) ->
-  Dir = case code:priv_dir(uaparser) of
+  Dir = case code:priv_dir(euaparser) of
           {error, bad_name} ->
             "priv/";
           D ->
